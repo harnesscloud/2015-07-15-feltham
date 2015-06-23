@@ -638,6 +638,46 @@ in using cloud computing to further their research.
   </div>
 </div> <!-- End of 'Python' section. -->
 
+<div id='xtreemfs'>
+  <h3>XtreemFS</h3>
+
+  <p>
+  <a href="http://xtreemfs.org">XtreemFS</a> is a distributed file system
+  consisting of a directory server (DIR), metadata and replica catalogues (MRCs)
+  and object storage devices (OSDs). We will setup an XtreemFS cluster in a
+  virtualised environment using <a href="https://www.vagrantup.com">Vagrant</a>
+  and <a href="https://www.virtualbox.org/">VirtualBox</a> during the workshop.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="xtreemfs-windows">Windows</h4>
+      <p>
+        Download and install VirtualBox from the <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox website</a>. In the next step install Vagrant using the <a href="http://www.vagrantup.com/downloads">Windows installer</a>.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="xtreemfs-macosx">Mac OS X</h4>
+      <p>
+        Download and install VirtualBox from the <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox website</a>. In the next step install Vagrant using the <a href="http://www.vagrantup.com/downloads">Mac OS X installer</a>.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="xtreemfs-linux">Linux</h4>
+      <p>
+        You can try to install Vagrant and VirtualBox via the package manager of your Linux
+        distribution. E.g. for Debian/Ubuntu run 
+        <code>sudo apt-get install vagrant virtualbox</code>. For distributions that do not ship Vagrant and VirtualBox, you find
+        installation instructions on the <a href="https://www.virtualbox.org/wiki/Linux_Downloads">VirtualBox download page</a> and the <a href="http://www.vagrantup.com/downloads">Vagrant download page</a>. 
+      </p>
+    </div>
+  </div>
+
+  <p>
+  After installing VirtualBox and Vagrant you have to download our <a href="https://raw.githubusercontent.com/chrkl/xtreemfs-software-carpentry/master/Vagrantfile">Vagrantfile</a>. This can also be done by cloning the Git repository: <code>git clone https://github.com/chrkl/xtreemfs-software-carpentry.git</code>. You can initialise the environment by calling <code>vagrant up</code> in the download directory or cloned repository. This step pulls a virtual machine image, starts multiple instances and installs the necessary XtreemFS packages. As this step might take a while and will generate a certain amount of network traffic, we recommend to <strong>prepare your environment prior to the workshop</strong>. Call <code>vagrant halt</code> to shutdown the VMs again.
+  </p>
+</div> <!-- End of 'XtreemFS' section. -->
+
 <!--
   Uncomment this section if you are using our virtual machine.
 
