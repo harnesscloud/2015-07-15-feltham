@@ -67,7 +67,7 @@ CHECKS = [
 # Editors
     'virtual-editor',
 # Browsers
-    'virtual-browser',
+    #'virtual-browser',
 # Version control
     'git',
     #'hg',              # Command line tool
